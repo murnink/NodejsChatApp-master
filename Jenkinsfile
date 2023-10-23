@@ -10,7 +10,7 @@ node ('ubuntu-appserver-cweb')
   {
     /* this builds the actual image;
     * this is synonymous to docker build on the command line */
-      app = docker.build("murnink/NodejsChatApp-master")
+      app = docker.build("murnink/nodejschatapp-master")
   }
 
   stage('Post-to-dockerhub') 
